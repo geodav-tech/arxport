@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arxport</title>
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link href="styles.css" rel="stylesheet">
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script src="form_control.js"></script>
+	</head>
+	<body>
+		<div class="page-header">
+		  <h1>Arxport</h1>
+		</div>
+
+		<div class="panel panel-primary">
+			<div class="panel-heading">
+				<h3 class="panel-title">MXD Export</h3>
+			</div>
+			<div class="panel-body">
+				<form class="form-inline">
+					<div class="form-group">
+						<label for="MXD" class="sr-only">MXD path</label>
+						<input type="text" class="form-control" id="MXD" placeholder="MXD path">
+					</div>
+					<button type="button" class="btn btn-primary" onclick="mxdExport()">Submit</button>
+					<div class="form-group">
+						<label class="sr-only">message</label>
+						<p class="form-control-static" id="message"></p>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</body>
+</html>
